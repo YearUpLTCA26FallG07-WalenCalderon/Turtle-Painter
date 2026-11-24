@@ -1,4 +1,5 @@
-import java.awt.*;
+import forms.Turtle;
+import forms.World;
 
 public class MainApp
 {
@@ -34,8 +35,26 @@ public class MainApp
 //        turtle.penDown();
 //        turtle.forward(hypotenuse);
 
+        turtle.setShellSize(25); // Making a bigger turtle
 
+        world.setLocation(0,0);
+
+        //turtle.drop("src/main/resources/tortuga-ninja.png", 250); adding a pic
         
+        //square
+//        turtle.setDelay(0.005);
+//        for (int i = 0; i < 4; i++){
+//            turtle.turnRight(90);
+//            turtle.forward();
+//        }
+
+        // circle
+//        turtle.setDelay(0.005);
+//        for (int i = 0; i < 360; i++) {
+//            turtle.forward(3);
+//            turtle.turnRight(1);
+//        }
+
 
 
 
