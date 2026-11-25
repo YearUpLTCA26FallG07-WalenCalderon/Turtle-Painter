@@ -8,7 +8,7 @@ public class Circle extends Shape {
     private double radius;
     private double step ;
 
-    public Circle(Turtle turtle, Point location, String color, int width) {
+    public Circle(Turtle turtle, Point location, String color, int width,double radius, double step) {
         super(turtle, location, color, width);
         this.radius = radius;
         this.step = 2 * Math.PI * radius/ 360;

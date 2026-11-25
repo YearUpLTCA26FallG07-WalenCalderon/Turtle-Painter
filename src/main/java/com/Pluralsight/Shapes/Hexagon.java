@@ -5,12 +5,14 @@ import com.Pluralsight.forms.Turtle;
 import java.awt.*;
 
 public class Hexagon extends Shape {
-    private double length;
 
+    private double sideLength;
+    private double angle;
 
-    public Hexagon(Turtle turtle, Point location, String color, int width) {
+    public Hexagon(Turtle turtle, Point location, String color, int width, double angle,  double sideLength) {
         super(turtle, location, color, width);
-        this
+        this.angle =  angle;
+        this.sideLength = sideLength;
     }
 
 
