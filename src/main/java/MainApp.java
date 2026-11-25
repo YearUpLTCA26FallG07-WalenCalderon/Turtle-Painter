@@ -1,6 +1,8 @@
 import forms.Turtle;
 import forms.World;
 
+import java.awt.*;
+
 public class MainApp
 {
     public static void main(String[] args)
@@ -35,7 +37,7 @@ public class MainApp
 //        turtle.penDown();
 //        turtle.forward(hypotenuse);
 
-        turtle.setShellSize(25); // Making a bigger turtle
+        turtle.setShellSize(15); // Making a bigger turtle
 
         world.setLocation(0,0);
 
@@ -48,15 +50,48 @@ public class MainApp
 //            turtle.forward();
 //        }
 
+        double radio = 100;
+        //The arc length formula is: 1° = 2πr / 360
+        double step = 2 * Math.PI * radio / 360;
+
         // circle
 //        turtle.setDelay(0.005);
 //        for (int i = 0; i < 360; i++) {
-//            turtle.forward(3);
+//            turtle.forward(step);
 //            turtle.turnRight(1);
 //        }
 
+        //parts
+        Turtle turtle2 = new Turtle(world,-70, -80);
+        //trutle 1 :
+        turtle.setDelay(0.005);
+        turtle.forward(radio);
 
 
+        //trutle 1 :
+        turtle.turnLeft(90);
+        for (int i = 0; i < 270; i++) {
+            turtle.forward(step);
+            turtle.turnLeft(1);
+
+        }
+
+        turtle.turnLeft(90);
+        turtle.forward(radio);
+
+        //turtle 2 :
+        turtle2.setShellSize(15);
+        turtle2.setColor(Color.RED);
+        turtle2.setDelay(0.005);
+
+        turtle2.forward(radio);
+        turtle2.turnRight(90);
+        for (int i = 0; i < 90; i++) {
+            turtle2.forward(step);
+            turtle2.turnRight(1);
+        }
+        turtle2.turnRight(90);
+        turtle2.forward(radio);
 
     }
 }
