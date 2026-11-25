@@ -1,5 +1,7 @@
-import forms.Turtle;
-import forms.World;
+package com.Pluralsight;
+
+import com.Pluralsight.forms.Turtle;
+import com.Pluralsight.forms.World;
 
 import java.awt.*;
 

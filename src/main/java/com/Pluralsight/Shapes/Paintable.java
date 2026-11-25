@@ -1,4 +1,4 @@
-package Shapes;
+package com.Pluralsight.Shapes;
 
 import java.awt.*;
 

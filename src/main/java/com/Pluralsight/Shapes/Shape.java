@@ -1,12 +1,12 @@
-package Shapes;
+package com.Pluralsight.Shapes;
 
-import forms.Turtle;
+import com.Pluralsight.forms.Turtle;
 
 import java.awt.Point;
 
 public abstract class Shape implements Paintable{
     private Turtle turtle;
-    private Point location; //todo find out if should be world or int type.
+    private Point location;
     private String color;
     private int width;
 
